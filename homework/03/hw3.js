@@ -33,6 +33,7 @@ class Vector {
         }
         return new Vector(r)
      }
+     
   }
   var x = new Vector([1,2,3])
   var y = new Vector([1,1,1])
