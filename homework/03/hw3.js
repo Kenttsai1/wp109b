@@ -2,6 +2,7 @@ class Vector {
     constructor(array) {
         this.a = array
     }
+
     add(v2) { 
       var r = []
       var x = this
@@ -23,7 +24,7 @@ class Vector {
         for (var i=0; i<x.a.length; i++) {
           s =s+( x.a[i]*y.a[i])
         }
-        return new Vector(s) 
+        return s
     }
     neg() { 
         var r = []
@@ -33,11 +34,11 @@ class Vector {
         }
         return new Vector(r)
      }
-     
+
   }
   var x = new Vector([1,2,3])
   var y = new Vector([1,1,1])
   console.log('x.add(y)=', x.add(y))
   console.log('x.sub(y)=',x.sub(y))
-  console.log(x.dot(y))
+  console.log('dot = ',x.dot(y))
   console.log('x.neg(y)=',x.neg(y))
