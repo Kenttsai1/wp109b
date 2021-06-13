@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+#game{
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border-style: outset double ;
+    background-color:gold;
+    
+} 
+
+
+  /* */
+#character /*跳跳方塊*/
+{
+    width: 60px;
+    height: 150px;
+    
+    background-image:url("pika.jpg");
+    image-rendering: auto;
+    position:relative;
+    top: 250px;   /*放下150px*/
+    
+}
+
+
+.animate/*添加畫面跳轉，以運行ＪＳ函數*/
+{
+    animation: jump 500ms linear;
+}
+@keyframes jump/*跳躍幅度，可以製造出一點懸停的感覺*/
+{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block  /*藍色移動方塊*/
+{
+    width: 40px;
+    height: 40px;
+    background-color: cyan;
+    position: relative;
+    top: 210px;
+    left: 460px;
+    
+    animation: block 0.8s infinite linear; /*infinite可重複運行linear使速度相同*/
+    
+    
+}
+@keyframes block /*動畫*/
+{
+    0%{left: 680px;}/*初始點*/
+    100%{left: 0px;}/*結束點*/
+}
+
+p{
+    text-align: center;
+}
