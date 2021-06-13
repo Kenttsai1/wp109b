@@ -31,10 +31,7 @@
             counter=0;
         }else{
             counter++;
-            if(counter>15){
-                
-                
-            }
+            
             document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);/*一秒加一分 */
         }
     
