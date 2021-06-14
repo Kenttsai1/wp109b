@@ -49,14 +49,16 @@
     top: 250px;
     left: 440px;
     
-    animation: block 0.8s infinite linear; /*infinite可重複運行linear使速度相同*/
+    animation: block 1s infinite linear; /*infinite可重複運行linear使速度相同*/
     
     
 }
+
 @keyframes block /*動畫*/
 {
     0%{left: 660px;}/*初始點*/
     100%{left: 0px;}/*結束點*/
+    
 }
 
 p{

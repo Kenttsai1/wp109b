@@ -1,6 +1,5 @@
 
-    var character = 
-    document.getElementById("character");
+    var character = document.getElementById("character");
     var counter = 0;
     var block = document.getElementById("block");
     function jump()
@@ -16,6 +15,11 @@
     }
    
     
+
+    document.addEventListener('keypress',()=>{
+        jump();
+    })
+    
     
     var checkDead = setInterval(function(){
         var characterTop = /*轉換成整數parseint  */
@@ -23,14 +27,17 @@
         var blockLeft = 
         parseInt(window.getComputedStyle(block).getPropertyValue("Left"));
     
-        if(blockLeft<30 && blockLeft>-30 && characterTop>=230){
+        if(blockLeft<60 && blockLeft>-60 && characterTop>=230){
             block.style.animation = "none";
-            alert("Game Over你輸了. score: "+Math.floor(counter/100));
+            alert("Game Over. time: "+Math.floor(counter/100));
             
             block.style.animation = "block 1s infinite linear";/* reset*/
             counter=0;
         }else{
             counter++;
+            if(counter/100>5.1){
+                block.style.animation = "block 0.8s infinite linear";
+            }
             
             document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);/*一秒加一分 */
         }
