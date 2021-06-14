@@ -7,8 +7,10 @@
     width: 700px;
     height: 400px;
     margin: auto;
-    border-style: outset double ;
-    background-color:gold;
+    border :2px solid black  ;
+    background-color: black;
+    background-image: url("back.jpg");
+    background-size: cover;
     
 } 
 
@@ -16,13 +18,12 @@
   /* */
 #character /*跳跳方塊*/
 {
-    width: 60px;
-    height: 150px;
-    
-    background-image:url("pika.jpg");
-    image-rendering: auto;
+    width: 80px;
+    height: 60px;
+    background-image:url("pikac.gif");
+    background-size: cover;
     position:relative;
-    top: 250px;   /*放下150px*/
+    top: 310px;   /*放下340px*/
     
 }
 
@@ -40,12 +41,13 @@
 }
 #block  /*藍色移動方塊*/
 {
-    width: 40px;
-    height: 40px;
-    background-color: cyan;
+    width: 50px;
+    height: 50px;
+    background-image: url("rock.jpg");
+    background-size: cover;
     position: relative;
-    top: 210px;
-    left: 460px;
+    top: 250px;
+    left: 440px;
     
     animation: block 0.8s infinite linear; /*infinite可重複運行linear使速度相同*/
     
@@ -53,7 +55,7 @@
 }
 @keyframes block /*動畫*/
 {
-    0%{left: 680px;}/*初始點*/
+    0%{left: 660px;}/*初始點*/
     100%{left: 0px;}/*結束點*/
 }
 
