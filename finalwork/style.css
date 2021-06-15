@@ -54,6 +54,7 @@
     
 }
 
+
 @keyframes block /*動畫*/
 {
     0%{left: 660px;}/*初始點*/
@@ -64,3 +65,10 @@
 p{
     text-align: center;
 }
+
+
+
+
+
+
+

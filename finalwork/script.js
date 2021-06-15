@@ -29,7 +29,7 @@
     
         if(blockLeft<60 && blockLeft>-60 && characterTop>=230){
             block.style.animation = "none";
-            alert("Game Over. time: "+Math.floor(counter/100));
+            alert("Game Over. 分數: "+Math.floor(counter/100));
             
             block.style.animation = "block 1s infinite linear";/* reset*/
             counter=0;
@@ -53,6 +53,6 @@
     
     },10)
 
-
+   
 
 
