@@ -16,9 +16,11 @@
 } 
 
 
+
   /* */
 #character /*跳跳方塊*/
 {
+    
     width: 80px;
     height: 60px;
     background-image:url("pikac.gif");
@@ -54,6 +56,21 @@
     
     
 }
+.go 
+{
+    
+    width: 100px;
+    height: 50px;
+    background: greenyellow;
+    border :2px solid black  ;
+    margin: auto;
+    
+    top: 250px;
+    left: 250px;
+
+    text-align: center;
+    font-size: 16px;
+   }
 
 
 @keyframes block /*動畫*/
