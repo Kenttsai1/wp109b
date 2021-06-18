@@ -2,6 +2,7 @@
     var character = document.getElementById("character");
     var counter = 0;
     var block = document.getElementById("block");
+    
     function jump()
     {
         if(character.classList !="animate")/*命中檢測 是否在彼此之上*/
@@ -13,11 +14,13 @@
             character.classList.remove("animate"); 
         },500);/*500ms刪除動畫 */
     }
+    
    
     
 
     document.addEventListener('keypress',()=>{
         jump();
+        
     })
     
     
@@ -37,6 +40,7 @@
             counter++;
             if(counter/100>5.1){
                 block.style.animation = "block 0.8s infinite linear";
+                
             }
             
             document.getElementById("scoreSpan").innerHTML = Math.floor(counter/100);/*一秒加一分 */
@@ -55,4 +59,4 @@
 
    
 
-
+    

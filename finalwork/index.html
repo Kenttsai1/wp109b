@@ -3,23 +3,35 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Game</title>
+    <title>JUMP Game!!!</title>
     <link rel="stylesheet" href="style.css"> <!--與style.css做連結-->
+    <script>
+        window.onload = function() {
+          var context = new AudioContext();
+        }
+        </script>
+
 </head>
 <style>
     img{
         border-radius: 4px;
     }
+    
 </style>
 <body>
+   
+    <audio id="myaudio" controls autoplay="true" loop="true">
+		<source src="pokemon.mp3" type="audio/mpeg">
+    </audio>
 
-    
+
     <div id="game">
     
     <div id="character"></div>
     <div id="block"></div>
     
-    
+    <!---->
+
     </div>
     
     <p> 分數 : <span id="scoreSpan"></span></p>

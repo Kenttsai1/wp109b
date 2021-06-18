@@ -3,13 +3,14 @@
     margin: 0;
     
 }
-#game{
+#game
+{
     width: 700px;
     height: 400px;
     margin: auto;
     border :2px solid black  ;
     background-color: black;
-    background-image: url("back.jpg");
+    background-image: url("back1.gif");
     background-size: cover;
     
 } 
